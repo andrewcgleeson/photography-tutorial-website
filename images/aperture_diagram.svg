@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 462 184"
+   version="1.1"
+   font-family="Constantia, Georgia, Times New Roman, serif"
+   font-size="16px">
+
+  <title>Aperture Diagram</title>
+  
+  <metadata>
+    <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+             xmlns:cc="http://web.resource.org/cc/"
+             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+
+  <style type="text/css">
+    circle {
+      fill: white;
+    }
+		text {
+			fill: white;
+		}
+    .f {
+      font-style: italic;
+      baseline-shift: 4px;
+    }
+    .s {
+      font-size: 20px;
+    }
+	</style>
+  
+  <rect height="184" width="462" fill="#5e5e5e" />
+
+  <g transform="translate(0 75)" text-anchor="middle">
+    
+    <g transform="translate(74 0)">
+      <circle r="64" />
+      <text y="85"><tspan class="f">f</tspan><tspan class="s">/</tspan>1.4</text>
+    </g>
+    
+    <g transform="translate(193 0)">
+      <circle r="45" />
+      <text y="66"><tspan class="f">f</tspan><tspan class="s">/</tspan>2</text>
+    </g>
+    
+    <g transform="translate(280.5 0)">
+      <circle r="32.5" />
+      <text y="53"><tspan class="f">f</tspan><tspan class="s">/</tspan>2.8</text>
+    </g>
+    
+    <g transform="translate(345.5 0)">
+      <circle r="22.5" />
+      <text y="43"><tspan class="f">f</tspan><tspan class="s">/</tspan>4</text>
+    </g>
+    
+    <g transform="translate(394.5 0)">
+      <circle r="16.5" />
+      <text y="37"><tspan class="f">f</tspan><tspan class="s">/</tspan>5.6</text>
+    </g>
+    
+    <g transform="translate(432.5 0)">
+      <circle r="11.5" />
+      <text y="32"><tspan class="f">f</tspan><tspan class="s">/</tspan>8</text>
+    </g>
+  </g>
+
+</svg>
