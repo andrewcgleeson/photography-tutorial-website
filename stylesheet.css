@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail&text=Photography&display=swap');
+
+/* ===== Core CSS ===== */
+html {
+    --main-color: #141E30;
+    --complementary-color: #613632;
+}
+    
+* {
+    margin: 0em;
+    padding: 0em;
+}
+
+body {
+    background-image: linear-gradient(to right, #141E30, #243B55);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+/* ===== Nav ===== */
+nav {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+}
+
+nav li {
+    list-style: none;
+    padding: .2em;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    font-size: 1.5em;
+    color: var(--main-color);
+}
+
+/* ===== Sections ===== */
+section {
+    margin: 2em 0em 2em 0em;
+}
+
+section h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+section > section:first-of-type {
+    margin-top: 1em;
+    padding-top: 1em;
+    background-color: white;
+}
+
+section > section {
+    margin: 0em;
+    background-color: white;
+    color: var(--main-color)
+}
+
+section h1:only-of-type, section p:only-of-type {
+    margin: auto;
+    max-width: 80%;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+main > section:first-child {
+        margin: 5em auto 5em auto ;
+}
+
+main > section:first-of-type h1, section:first-of-type h1 + p {
+        margin: 0em auto 0em auto;
+        max-width: 80%;
+        text-align: center;
+}
+
+p {
+    padding: 1em 0em 1em 0em;
+}
+
+p + p {
+    margin-top: 10em;
+    padding: 1.5em 4em 1.5em 4em;
+    text-align:center;
+    background-color: white;
+    color: var(--main-color)
+}
+
+table {
+    font-size: .6em;
+    margin: 4em auto 4em auto;
+    text-align: center;
+    width: 10%;
+    border: solid;
+    border-color: white;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(200, 200, 200, .3)  ;
+}
+
+/* ===== Figure ===== */
+figure {
+    margin: .5em 0em .5em 0em;
+    padding: 1em 0em 1em 0em;
+    text-align: center;
+    background-color: white;
+}
+
+figure:first-of-type {
+    margin-top: 5em;
+}
+
+figure a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+figcaption {
+    padding: .5em;
+    color: var(--main-color);
+}
+
+/* ===== Images ===== */
+img[src*=".svg"] {
+    display: block;
+    margin: 0em auto 0em auto;
+    max-width: 30%;
+}
+
+img[src*="shared/portrait.png"] {
+    display: block;
+    margin: 0em auto 0em auto;
+    max-width: 25%;
+}
+
+img[src*="shared/portrait.png"] + h1 {
+    padding: .5em;
+}
+
+img[src*="shared/portrait.png"] ~  p {
+    background-color: white;
+    color: var(--main-color);
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* == Aside == */
+aside {
+    margin: 3em auto 2em auto;
+    max-width: 70%;
+    color: var(--main-color);
+    background-color: white;
+    text-align: center;   
+}
+
+aside p {
+    margin: auto;
+    max-width: 80%;
+}
+
+/* ===== Footer CSS ===== */
+footer {
+    margin: 2em auto 2em auto;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer a {
+    display: block;
+    margin: 1em auto 1em auto;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    color: var(--main-color);
+    background-color: white;
+}
+
+/* == a == */
+a {
+    color: var(--complementary-color)
+}
+
+/* === #intro === */
+#intro section {
+    margin: 5em;
+    max-width: 100%;  
+}
+
+#intro h1 {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#intro p {
+    margin: 5em auto 5em auto;
+    text-align: center;
+}
+
+#landscape main h1:first-child, #portrait main h1:first-child, #inanimate main h1:first-child {
+    padding-top: 5em;
+}
+    
+/* === .leftCenter === */
+.leftCenter, .leftCenter + p {
+    max-width: 80%;
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: center;
+}
+
+.leftCenter {
+    margin-top: 4em;
+}
+
+.leftCenter + p {
+    margin-bottom: 4em;
+}
+
+.threeSection p {
+    padding: 1em;
+}
+    
+/* == Navigation Button == */
+a[target*="_top"] {
+    padding: 1em;
+    border-style: solid;
+    border-color: white;
+    text-decoration: none;
+    background-color: white;
+    color: var(--main-color);
+}
+
+/* ===== Larger Screens ===== */
+/* ===== 30 ems ===== */
+@media screen and (min-width: 30em) {
+    /* =====Nav CSS ===== */
+    nav li {
+        justify-content: center;
+        display: flex;
+    }
+    
+    /* === #intro === */
+    #intro {
+        background-image: url(images/product/droplets.jpg);
+    }
+    
+    #intro section {
+        margin: 0em auto 0em auto;
+        padding: 5em 0em 0em 0em;
+        width: 60%;  
+    }
+    
+    #intro h1 {
+        word-spacing: 100vw;
+    }
+    
+    #intro b {
+        font-family: 'Yellowtail', sans-serif;
+        font-size: 2em;
+    }
+    
+    /* === Portrait === */
+    #portrait main > section:first-child {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(images/portrait/fatherSon_1280.jpg);
+        background-size: cover;
+        margin-top: 0em;
+        margin-bottom: 2em;
+        padding-top: 2em;
+    }
+    
+    /* === Landscape === */
+    #landscape main > section:first-child {
+        background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url("images/landscape/sea_1024.jpg");
+        background-size: cover;
+        background-position: fixed;
+        padding-top: 2em;
+        margin-top: 0em;
+    }
+    
+    /* === Inanimate === */
+    #inanimate main > section:first-child {
+        background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url("images/drops.jpg");
+        background-size: cover;
+        background-position: fixed;
+        padding-top: 2em;
+        margin-top: 0em;
+    }
+    /* === Aside === */
+    aside {
+        box-shadow: 0px 24px 24px 2px rgba(0, 0, 0, .3);
+        transition: transform 1s ease, box-shadow 1s;
+    }
+    
+    aside:hover {
+        transform: scale(.95);
+        box-shadow: 0px 16px 16px 2px rgba(0, 0, 0, .6);
+        color: var(--complementary-color);
+        background-color: white;
+    }
+    
+    footer {
+        max-width: 20%;
+    }
+    
+    table {
+        font-size: .8em;
+    }
+}
+
+/* ===== 50ems ===== */
+@media screen and (min-width: 50em) {
+    /* =====Nav CSS ===== */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+    }
+
+    nav a {
+        padding: .5em 1em .5em 1em; 
+        text-decoration: none;
+    }
+    
+    /* = Animations = */
+    nav a:hover {
+        transition: .5s ease;
+        background-color: rgba(200, 200, 200, .8);
+        color: #613632;
+    }
+    
+    nav a[href=""] {
+    color: var(--complementary-color);
+    background-color: rgba(150, 150, 150, .2);
+    }
+    
+    /* ===== Section CSS ===== */
+    section {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+        font-size: 1.2em;
+    }  
+    
+    section > section {
+        margin: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 45%;
+        text-align: center;
+    }
+    
+    section > section:first-child {
+        padding: 0em 0em .4em 0em;
+    }
+    
+    section > section:last-child {
+        margin-bottom: 2em;
+    }
+    
+    p + section:only-of-type {
+        display: flex;
+        margin: 6em auto 0em auto;
+        padding: 1em;
+        max-width: 100%;
+    }
+    
+    p + section:only-of-type div {
+        flex-basis: 50%;
+    }
+    
+    /* == Text == */
+    main section:only-child h1 {
+        margin: 1em;
+    }
+    
+    /* ===== Figure CSS ===== */
+    figure {
+        padding: .5em;
+        margin: 5em 0em 0em 0em;
+        background-color: white;
+        flex-basis: 30%;
+        box-shadow: 0px 24px 24px 2px rgba(0, 0, 0, .3);
+        transition: transform .5s, box-shadow .4s;
+    }
+
+    p + figure {
+        padding: .5em;
+        margin-top: 5em;
+    }
+    
+    /* = Animations = */
+    figure:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 18px 18px 2px rgba(0, 0, 0, .2);
+    }  
+    
+    /* ===== Images ===== */
+    picture img {
+        max-width: 100%;
+    }
+    
+    img[src*=".svg"] {
+        max-width: 70%;
+    }
+    
+    p + section:only-of-type img {
+        max-width: 50%;
+        justify-self: flex-start;
+        flex-basis: 50%;
+    }
+    
+    /* === Table === */
+    table {
+        font-size: 1.5em;
+    }
+    
+    caption {
+        padding: .5em;
+    }
+    
+    /* === .leftCenter === */
+    .leftCenter {
+        padding-top: 2em;
+        margin: 4em auto 0em auto;
+    }
+    
+    .leftCenter, .leftCenter + p {
+        padding-right: 60%;
+        text-align: center;
+    }
+
+    .leftCenter + p {
+        margin: 0em auto 16em auto;
+    }
+    
+    /* === .threeSection === */
+    .threeSection {
+        display: flex;
+        margin-top: 4em;
+    }
+    
+    .threeSection section {
+        margin: 0em;
+        width: 30%;
+    }
+
+    /* === All three === */
+    #landscape p + p, #portrait p + p, #inanimate p + p {
+        margin-top: 20em;
+    }
+        
+     #landscape main > section:first-child, #portrait main > section:first-child, #inanimate main > section:first-child {   
+        margin: 0em 0em 2em 0em;
+        padding-top: 8em;
+        background-size: cover;
+        background-position: center;
+     }
+     
+    /* === #landscape === */
+    #landscape main > section:first-child {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3)), url("images/landscape/sea_2560.jpg");
+        background-position: fixed;
+    }
+        
+    /* === #portrait === */
+    #portrait main > section:first-child {
+        background-image: url(images/portrait/fatherSon_title.jpg); 
+    }
+    
+    /* === #inanimate === */
+    #inanimate main > section:first-child {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3)), url("images/product/droplets.jpg");
+        background-size: cover;
+        background-position: fixed;
+    }
+    
+    /* === #intro === */
+    #intro {
+        background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)), url(images/product/droplets.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    #intro section {
+        margin: 6em 2em 0em 0em;
+        text-align: left;
+    }
+    
+    #terminology {
+        display: flex; 
+        margin-top: 4em;
+        width: 100%;
+    }
+}
